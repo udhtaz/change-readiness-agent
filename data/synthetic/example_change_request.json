@@ -1,0 +1,26 @@
+{
+  "is_synthetic": true,
+  "change_id": "SYN-CR-001",
+  "title": "Update a fictional staging service configuration",
+  "summary": "Adjust a harmless timeout setting for a fictional service in a synthetic staging environment.",
+  "environment": "staging",
+  "change_type": "configuration",
+  "approval_evidence": [
+    "Synthetic approval reference SYN-APR-001"
+  ],
+  "deployment_steps": [
+    "Record the fictional service's current timeout value.",
+    "Apply the new timeout value to the synthetic staging service.",
+    "Run a synthetic health check."
+  ],
+  "rollback_steps": [
+    "Restore the previously recorded timeout value.",
+    "Repeat the synthetic health check."
+  ],
+  "testing_evidence": [
+    "Synthetic pre-change smoke test completed successfully."
+  ],
+  "monitoring_checks": [
+    "Observe synthetic request latency and error-rate signals for 15 minutes."
+  ]
+}

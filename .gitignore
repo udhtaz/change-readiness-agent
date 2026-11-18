@@ -151,8 +151,10 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
-.venv
+.venv/
 env/
 venv/
 ENV/
@@ -221,3 +223,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local editor settings
+.vscode/
+
+# Local ML model files and caches
+models/
+model-cache/
+artifacts/models/
+*.safetensors
+*.gguf
+*.onnx
+*.pt
+*.pth
+*.ckpt
